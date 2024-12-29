@@ -36,5 +36,8 @@ func SetupRouter() *gin.Engine {
 	protectedRoutes.PUT("/stories/:id", controllers.UpdateStory)
 	protectedRoutes.DELETE("/stories/:id", controllers.DeleteStory)
 
+	// websocket route for collabaration
+	protectedRoutes.GET("/ws", controllers.WebsocketHanler)
+
 	return router
 }
