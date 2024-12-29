@@ -4,6 +4,7 @@ import (
 	"log"
 	"os"
 	"story-plateform/config"
+	"story-plateform/controllers"
 	"story-plateform/routes"
 
 	"github.com/joho/godotenv"
