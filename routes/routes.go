@@ -46,7 +46,7 @@ func SetupRouter() *gin.Engine {
 	protectedRoutes.DELETE("/stories/:id", controllers.DeleteStory)
 
 	// websocket route for collabaration
-	protectedRoutes.GET("/ws", controllers.WebsocketHanler)
+	router.GET("/ws/collaborate/:storyId", controllers.WebsocketHandler)
 
 	return router
 }
